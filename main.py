@@ -64,8 +64,9 @@ class ResetPinRequest(BaseModel):
 
 @app.get("/users/by-phone")
 def identify_by_phone(phone: str):
+    normalized = phone.replace(" ", "").replace("+", "%2B").replace("%2B", "+")
     for user in users:
-        if user["phone"] == phone:
+        if user["phone"] == normalized:
             return {
                 "user_id": user["user_id"],
                 "first_name": user["first_name"],
@@ -73,6 +74,8 @@ def identify_by_phone(phone: str):
                 "masked_phone": f"****{user['phone'][-2:]}"
             }
     raise HTTPException(status_code=404, detail="Numero non riconosciuto")
+
+
 
 @app.get("/users/identify")
 def identify_by_name(first_name: str, last_name: str):
