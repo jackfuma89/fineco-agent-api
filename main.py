@@ -64,15 +64,19 @@ class ResetPinRequest(BaseModel):
 
 @app.get("/users/by-phone")
 def identify_by_phone(phone: str):
-    normalized = phone.replace(" ", "").replace("+", "%2B").replace("%2B", "+")
+    # Normalizza il numero ricevuto rimuovendo +, %2B, spazi
+    normalized_input = phone.replace(" ", "").replace("+", "").replace("%2B", "")
+
     for user in users:
-        if user["phone"] == normalized:
+        normalized_db_phone = user["phone"].replace(" ", "").replace("+", "")
+        if normalized_db_phone == normalized_input:
             return {
                 "user_id": user["user_id"],
                 "first_name": user["first_name"],
                 "last_name": user["last_name"],
                 "masked_phone": f"****{user['phone'][-2:]}"
             }
+
     raise HTTPException(status_code=404, detail="Numero non riconosciuto")
 
 
