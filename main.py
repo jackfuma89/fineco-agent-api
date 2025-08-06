@@ -19,9 +19,9 @@ app = FastAPI()
 users = [
     {
         "user_id": "abc123",
-        "first_name": "Mario",
-        "last_name": "Rossi",
-        "phone": "+393341234567",
+        "first_name": "Giacomo",
+        "last_name": "Fumagalli",
+        "phone": "+393402440227",
         "auth_code": "1234",
         "otp": None,
         "otp_expires_at": None,
@@ -29,9 +29,9 @@ users = [
     },
     {
         "user_id": "def456",
-        "first_name": "Giulia",
-        "last_name": "Bianchi",
-        "phone": "+393331112233",
+        "first_name": "Domenico",
+        "last_name": "Fumagalli",
+        "phone": "+393478933194",
         "auth_code": "5678",
         "otp": None,
         "otp_expires_at": None,
@@ -39,10 +39,20 @@ users = [
     },
     {
         "user_id": "ghi789",
-        "first_name": "Luca",
-        "last_name": "Verdi",
-        "phone": "+393320998877",
+        "first_name": "Carlo",
+        "last_name": "Pedrali",
+        "phone": "+393939607166",
         "auth_code": "4321",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "11223344"
+    },
+    {
+        "user_id": "wyz789",
+        "first_name": "Nabil",
+        "last_name": "Chatbi",
+        "phone": "+393934292895",
+        "auth_code": "4152",
         "otp": None,
         "otp_expires_at": None,
         "pin_dispositivo": "11223344"
