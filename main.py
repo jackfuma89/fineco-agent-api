@@ -47,6 +47,62 @@ users = [
         "otp_expires_at": None,
         "pin_dispositivo": "11223344"
     },
+    
+    {
+        "user_id": "lau991",
+        "first_name": "Laura",
+        "last_name": "Tremolada",
+        "phone": "+393333828226",
+        "auth_code": "1111",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "15223744"
+    },
+
+    {
+        "user_id": "rob960",
+        "first_name": "Roberto",
+        "last_name": "Rossotti",
+        "phone": "+393477631778",
+        "auth_code": "1112",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "15223044"
+    },
+
+    {
+        "user_id": "gio991",
+        "first_name": "Giorgio",
+        "last_name": "Antongiovanni",
+        "phone": "+393371625408",
+        "auth_code": "1113",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "86233044"
+    },
+
+    {
+        "user_id": "ste980",
+        "first_name": "Stefano",
+        "last_name": "Colombo",
+        "phone": "+393669553707",
+        "auth_code": "1114",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "55233044"
+    },
+
+    {
+        "user_id": "manu988",
+        "first_name": "Merdaccia",
+        "last_name": "Zanella",
+        "phone": "+393317872919",
+        "auth_code": "1114",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "35233043"
+    },
+    
     {
         "user_id": "wyz789",
         "first_name": "Nabil",
