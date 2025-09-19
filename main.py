@@ -91,17 +91,6 @@ users = [
         "otp_expires_at": None,
         "pin_dispositivo": "55233044"
     },
-
-    {
-        "user_id": "manu988",
-        "first_name": "Merdaccia",
-        "last_name": "Zanella",
-        "phone": "+393317872919",
-        "auth_code": "1114",
-        "otp": None,
-        "otp_expires_at": None,
-        "pin_dispositivo": "35233043"
-    },
     
     {
         "user_id": "wyz789",
