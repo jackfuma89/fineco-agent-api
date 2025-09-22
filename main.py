@@ -101,6 +101,17 @@ users = [
         "otp": None,
         "otp_expires_at": None,
         "pin_dispositivo": "11223344"
+    },
+    
+    {
+        "user_id": "ysy845",
+        "first_name": "Stefano",
+        "last_name": "Amadei",
+        "phone": "+393356266347",
+        "auth_code": "3355",
+        "otp": None,
+        "otp_expires_at": None,
+        "pin_dispositivo": "51223346"
     }
 ]
 
